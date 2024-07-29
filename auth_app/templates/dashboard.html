@@ -1,0 +1,9 @@
+{% extends 'layouts/app.html' %}
+
+{% block content %}
+
+<h1>Wecome Mr {{ request.user.username }} in Dashboard</h1>
+<a href="{% url 'logout' %}" class="btn btn-dark">Logout</a>
+
+
+{% endblock %}
